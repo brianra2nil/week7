@@ -1,56 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+#red {
+    color: red;
+}
+
+</style>
+
 </head>
+
 <body>
     <a href="index.html">Day1</a>
     <a href="day2.html">Day2</a>
     <a href="day3.html">Day3</a>
     <a href="day4.html">Day4</a>
     <a href="day5.html">Day5</a>
-    
-<h1>Day 01</h1>
-<img src="./pics/day11.png" alt="day11">
+
+    <h1>Day 01</h1>
+    <img src="./pics/day11.png" alt="day11">
+    <hr>
+    <h1>Make a basic database in MySQL</h1>
+
+    <p>
+        Give the pets and the owners an "id" with the following line: <br><br>
+        id INT AUTO-INCREMENT NOT NULL PRIMARY KEY, </p>
+    <p>Now you can make a relationship between certain owners and pets</p>
+
+
+    <br>
+    <br>
+    <img src="./pics/day12.png" alt="">
+    <hr>
+    <h1>Add the use statement, and Owners needs to be above pets. (for Hiearchy in the function)</h1>
+    <br>
+    <p>Give the pets the following lines so that they have an ID:</p>
+    <br>
+    <p>owner_id INT NOT NULL</p>
+    <p>FOREIGN KEY (owner_id) REFERENCES owners(id)</p>
+    <br>
+    <p>"NOT NULL" means every pet must have an owner. There are no pets without owners in this databse</p>
+    <br>
+    <img src="./pics/day13.png" alt="">
+    <hr>
+    <h1>Now let's create an owner and a pet</h1>
+    <br>
+    <h2>**************** create owner *************</h2>
+    <img src="./pics/day14.png" alt="">
+    <br>
+    <h2>**************** create pet ************</h2>
+    <img src="./pics/day15.png" alt="">
+    <hr>
+    <h1>Now we want to get information about Buster's Owner, John Doe. We want his name email and phone number. We need
+        a join query for this.</h1>
+    <br>
+    <img src="./pics/day16.png" alt="">
+    <hr>
+    <h1>Use the following code:</h1>
+    <br>
+    <img src="./pics/day17.png" alt="">
+    <hr>
+    <h1>Now to try a different type of join, we have to create a second owner. Create Jane Doe.</h1>
+    <p>Make the following changes to the code:</p>
+    <ul>
+        <li>change the inner join to left join. Result: nothing different, because there is no such thing as a pet that
+            does not have an owner id.</li>
+        <li>Now swap out the owners and pets. Change from pets to from owners and left join owners to left join pets.
+            Result: in this case there is an owner that doesn't have a pet. So it will show NULL for all the pet fields,
+            but it will show Jane Doe's info.</li>
+        <li>Now use the same example above and switch to a right join.  Result:  nothing will come up because there is not a single pet without an owner.</li>
+    </ul>
+    <hr>
+    <h1>Starting a new GITHUB for the employee manager app, based on this database.</h1>
+    <br>
+    <p>Schema.sql inside sql folder:
+    </p>
+
+    <img src="./pics/day18.png" alt="">
+    <br>
+    <p>seed.sql inside sql folder:</p>
+    <hr>
+    <img src="./pics/day19.png" alt="">
+
+    <h1>Bring in your index.js file in the root folder:
+        <a href="https://github.com/QFults/employeeManager/blob/master/index.js">LINK TO code on GITHUB</a>
+    </h1>
+    <h2>Watch Monday 8/24 video, after lunch at the 3:00 hour mark for the details on the code above. </h2>
+
+    <h4 id="red">.</h4>
 <hr>
-<h1>Make a basic database in MySQL</h1>
-
-<p>
-Give the pets and the owners an "id" with the following line: <br><br>
-id INT AUTO-INCREMENT NOT NULL PRIMARY KEY, </p>
-<p>Now you can make a relationship between certain owners and pets</p>
-
-
-<br>
-<br>
-<img src="./pics/day12.png" alt="">
-<hr>
-<h1>Add the use statement, and Owners needs to be above pets.  (for Hiearchy in the function)</h1>
-<br>
-<p>Give the pets the following lines so that they have an ID:</p>
-<br>
-<p>owner_id INT NOT NULL</p>
-<p>FOREIGN KEY (owner_id) REFERENCES owners(id)</p>
-<br>
-<p>"NOT NULL" means every pet must have an owner.  There are no pets without owners in this databse</p>
-<br>
-<img src="./pics/day13.png" alt="">
-<hr>
-<h1>Now let's create an owner and a pet</h1>
-<br>
-<h2>**************** create owner *************</h2>
-<img src="./pics/day14.png" alt="">
-<br>
-<h2>**************** create pet ************</h2>
-<img src="./pics/day15.png" alt="">
-<hr>
 
 
 
 
 
 
+
+    Quinton's Github Link <a href="https://github.com/QFults/employeeManager">Click</a>
 </body>
+
 </html>
